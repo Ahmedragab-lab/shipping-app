@@ -61,7 +61,7 @@
                                         @endif
                                     </td>
                                     <td>
-                                        @if (empty($user->getRoleNames()))
+                                        @if (!empty($user->getRoleNames()))
                                             @foreach ($user->roles_name as $v)
                                                 <h5><label class="badge badge-success">{{ $v }}</label></h5>
                                             @endforeach

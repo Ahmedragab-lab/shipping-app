@@ -15,7 +15,7 @@ class CreateProductsTable extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('cat_id')->references('id')->on('cats')->CascadeOnDelete();
+            $table->foreignId('cat_id')->references('id')->on('cats')->cascadeOnDelete();
             $table->string('product_name');
             $table->string('slug');
             $table->mediumText('small_desc');
