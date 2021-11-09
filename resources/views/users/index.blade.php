@@ -75,7 +75,7 @@
                                             <a href="{{ route('users.edit', $user) }}" class="btn btn-info">{{ __('Edit') }}</a>
                                             {{-- @endcan --}}
                                             {{-- @can('حذف مستخدم') --}}
-                                            <button type="button" class="btn btn-danger" onclick="confirm('{{ __("Are you sure you want to delete this admin?") }}') ? this.parentElement.submit() : ''">
+                                            <button type="button" class="btn btn-danger" onclick="confirm('{{ __('Are you sure you want to delete this admin?') }}') ? this.parentElement.submit() : ''">
                                                 {{ __('Delete') }}
                                             </button>
                                             {{-- @endcan --}}

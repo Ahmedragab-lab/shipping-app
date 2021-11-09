@@ -35,8 +35,8 @@
               <div class="pull-right"><i class="ti-plus"></i></div><div class="clearfix"></div>
             </a>
             <ul id="elements1" class="collapse" data-parent="#sidebarnav">
-              {{-- <li><a href="{{ route('cats.index') }}">categories</a></li> --}}
-              {{-- <li><a href="{{ route('products.index') }}">Products</a></li> --}}
+              <li><a href="{{ route('cats.index') }}">categories</a></li>
+              <li><a href="{{ route('products.index') }}">Products</a></li>
               {{-- <li><a href="#">video</a></li> --}}
             </ul>
           </li>
