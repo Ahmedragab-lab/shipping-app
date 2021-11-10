@@ -1,0 +1,7 @@
+.pageloader {
+    transition: transform .1s ease-out,-webkit-transform .1s ease-out ;
+}
+
+.pageloader::after {
+    animation: loader-figure .15s infinite cubic-bezier(.215,.61,.355,1);
+}

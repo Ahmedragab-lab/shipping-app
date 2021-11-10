@@ -23,7 +23,7 @@
                     <a href="{{ route('front') }}">home</a>
                   </li>
                   <li>
-                    <a href="./features/index.html">features</a>
+                    <a href="{{ route('allproducts')}}">Product</a>
                   </li>
                   <li>
                     <a href="./pages/index.html">pages</a>
@@ -88,7 +88,7 @@
               </li>
             </ul>
             <!-- .header-menu-icons -->
-            <a href="#quote" class="button is-white">get a quote</a>
+            <a href="#quote" class="button is-white "><i class="icon-basket mr-2"></i>&nbsp;  your cart</a>
             <div class="modal search-form-overlay">
               <div class="modal-background"></div>
               <div class="modal-content">

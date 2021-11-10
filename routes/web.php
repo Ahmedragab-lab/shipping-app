@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 use App\Http\Controllers\Admin;
-use App\Http\Controllers\Frontend\FrontendController;
+use App\Http\Controllers\Frontend;
 
 
 Route::group(
@@ -13,11 +13,13 @@ Route::group(
         'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath']
     ], function(){
         // as a guest ==============================================================================
-        Route::get('/',[FrontendController::class,'index'])->name('front');
+        Route::get('/',[Frontend\FrontendController::class,'index'])->name('front');
         //==========================================================================================
         Auth::routes();
         //as a client ==============================================================================
-        Route::get('/front',[FrontendController::class,'index'])->name('front');
+        // Route::get('/front',[FrontendController::class,'index'])->name('front');
+        Route::resource('front',Frontend\FrontendController::class);
+        Route::get('product',[Frontend\AllProducts::class,'index'])->name('allproducts');
 
         //as admin ==================================================================================
         Route::group(['middleware' => ['auth','Admin']], function() {
@@ -26,6 +28,7 @@ Route::group(
            Route::resource('roles',App\Http\Controllers\RoleController::class);
            Route::resource('cats',Admin\CatController::class);
            Route::resource('products',Admin\ProductController::class);
+           Route::resource('client',Admin\ClientController::class);
         });
     });
 //===================================================================================================

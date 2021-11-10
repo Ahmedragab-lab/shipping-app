@@ -73,16 +73,9 @@
             <ul class="nav-menu-dropdown style-2 on-click">
               <li>
                 <a href="javascript:void(0);">
-                  <span class="flag-icon flag-icon-gb"></span>En</a>
+                    <span class="flag-icon flag-icon-gb"></span>En
+                </a>
                 <ul>
-                  <li>
-                    <a href="javascript:void(0);">
-                      <span class="flag-icon flag-icon-es"></span>Es</a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0);">
-                      <span class="flag-icon flag-icon-tr"></span>tr</a>
-                  </li>
                   <li>
                     <a href="javascript:void(0);">
                       <span class="flag-icon flag-icon-eg"></span>ع</a>
@@ -90,6 +83,7 @@
                 </ul>
               </li>
             </ul>
+
             <!-- .header-menu-icons -->
           </div>
           <!-- .level-right -->

@@ -1,10 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use App\Models\Client;
+use App\Models\User;
 use Illuminate\Http\Request;
-
+use App\Http\Controllers\Controller;
 class ClientController extends Controller
 {
     /**
@@ -12,9 +13,11 @@ class ClientController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        //
+    $data = User::where('roles_name','["client"]')->orderBy('id','DESC')->paginate(5);
+    return view('admin.client.index',compact('data'))
+    ->with('i', ($request->input('page', 1) - 1) * 5);
     }
 
     /**

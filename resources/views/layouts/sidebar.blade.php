@@ -24,6 +24,12 @@
             </a>
           </li>
           <li>
+            <a href="{{ route('client.index') }}">
+              <div class="pull-left"><i class="fa fa-users"></i><span class="right-nav-text">{{ __('clients') }}</span></div>
+              <div class="clearfix"></div>
+            </a>
+          </li>
+          <li>
             <a href="{{ route('roles.index') }}">
               <div class="pull-left"><i class="fa fa-times-rectangle"></i><span class="right-nav-text">{{ __('site.permissions') }}</span></div>
               <div class="clearfix"></div>
@@ -37,7 +43,7 @@
             <ul id="elements1" class="collapse" data-parent="#sidebarnav">
               <li><a href="{{ route('cats.index') }}">categories</a></li>
               <li><a href="{{ route('products.index') }}">Products</a></li>
-              {{-- <li><a href="#">video</a></li> --}}
+
             </ul>
           </li>
         </ul>
