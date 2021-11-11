@@ -4,6 +4,7 @@
 <meta name="author" content="Jozoor">
 <meta name="description" content="Joo - Niche Multi-Purpose HTML Template">
 <meta name="keywords" content="creative, niche, responsive, html5, css3, multipurpose, all in one, html, template">
+
 <title>Logistics | Joo - Niche Multi-Purpose HTML Template</title>
 <link rel="stylesheet" href="{{ asset('front/css/vendor.min.css?v=1557446391092') }}">
 <link rel="stylesheet" href="{{ asset('front/css/styles.min.css?v=1557446391092') }}">
@@ -29,6 +30,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Joo Template">
+<meta name="csrf-token" content="{{ csrf_token() }}">
 <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('front/images/favicons/favicon-32x32.png') }}">
 <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('front/images/favicons/favicon-16x16.png') }}">
 <link rel="shortcut icon" href="{{ asset('front/images/favicons/favicon.ico') }}">

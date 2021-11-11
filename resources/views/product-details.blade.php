@@ -110,7 +110,7 @@
         <section class="section works-list portfolio-single product-single is-clearfix">
           <div class="container">
             <br>
-            <div class="columns is-multiline is-variable is-6">
+            <div class="columns is-multiline is-variable is-6 product_data">
               <div class="column is-6">
                 <div class="flexslider thumbnails">
                   <ul class="slides">
@@ -148,19 +148,32 @@
                   </span>
                 </div>
                 <br>
-                <p class="has-text-primary is-size-3">{{ $product->selling_price }} LE</p>
+                <p class="has-text-primary is-size-3">Original price : <s>{{ $product->original_price }} LE</s></p>
+                <p class="has-text-primary is-size-1">Selling price : {{ $product->selling_price }} LE</p>
                 <br>
-                <p> {{ $product->desc }}</p>
+                <p class="has-text-primary"> Description :{{ $product->small_desc }}</p>
+                <p> {!! $product->desc !!}</p>
                 <br>
+                <input type="hidden" value="{{ $product->id }}" class="prod_id" name="prod_id">
                 <div class="columns is-multiline is-variable is-2">
                   <div class="column is-2">
                     <div class="field">
                       <div class="control">
-                        <input class="input has-text-centered" type="number" value="1"> </div>
+
+                          <input class="input has-text-centered qty_input" type="number" value="1" name="prod_qty">
+
+                      </div>
                     </div>
                   </div>
                   <div class="column is-10">
-                    <a href="#" class="button">add to cart</a>
+                    <button  class="button addtocartbtn"><i class="icon-basket mr-2"></i>&nbsp; add to cart</button>
+                  </div>
+                  <div class="column is-10">
+                      @if($product->qty >0)
+                        <label class="badge bg-success">In Stock</label>
+                      @else
+                        <label class="badge bg-danger">Out Of Stock</label>
+                      @endif
                   </div>
                 </div>
                 <br>
@@ -627,4 +640,33 @@
     </div>
     <!-- #content-area -->
   </div>
+@endsection
+@section('js')
+<script>
+    $(document).ready(function(){
+        $('.addtocartbtn').click(function(e){
+            e.preventDefault();
+            var prod_id  = $('input[name="prod_id"]').val();
+            var prod_qty = $('input[name="prod_qty"]').val();
+            console.log(prod_id);
+            console.log(prod_qty);
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+            $.ajax({
+                method: "POST",
+                url: "/addtocart",
+                data: {
+                    'prod_id': prod_id,
+                    'prod_qty': prod_qty,
+                },
+                success: function(response) {
+                alert(response.status);
+                }
+            });
+        });
+    });
+</script>
 @endsection

@@ -23,7 +23,7 @@
                     <a href="{{ route('front') }}">home</a>
                   </li>
                   <li>
-                    <a href="{{ route('allproducts')}}">Product</a>
+                    <a href="{{ route('allproducts.index')}}">Product</a>
                   </li>
                   <li>
                     <a href="./pages/index.html">pages</a>

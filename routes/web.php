@@ -19,7 +19,12 @@ Route::group(
         //as a client ==============================================================================
         // Route::get('/front',[FrontendController::class,'index'])->name('front');
         Route::resource('front',Frontend\FrontendController::class);
-        Route::get('product',[Frontend\AllProducts::class,'index'])->name('allproducts');
+        Route::resource('allproducts',Frontend\AllProducts::class);
+                                 //============================
+    Route::middleware(['auth'])->group(function () {
+      Route::post('addtocart',[Frontend\CartController::class,'addtocart'])->name('addtocart');
+
+     });
 
         //as admin ==================================================================================
         Route::group(['middleware' => ['auth','Admin']], function() {

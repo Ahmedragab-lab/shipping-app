@@ -5,13 +5,9 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Cat extends Model
+class Cart extends Model
 {
     use HasFactory;
-    protected $table = 'cats';
+    protected $table = 'carts';
     protected $guarded = [];
-
-    public function products(){
-        return $this->hasMany(Product::class);
-    }
 }

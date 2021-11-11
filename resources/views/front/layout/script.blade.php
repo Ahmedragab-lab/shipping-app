@@ -3,6 +3,7 @@
 <script src="{{ asset('front/js/scripts.min.js?v=1557446391092') }}"></script>
 <script src="{{ asset('front/js/custom.js?v=1557446391092') }}"></script>
 <script src="{{ asset('front/js/owl.carousel.min') }}"></script>
+@yield('js')
 <script>
     $('.owl-carousel').owlCarousel({
     loop:true,
@@ -22,3 +23,4 @@
     }
 })
 </script>
+

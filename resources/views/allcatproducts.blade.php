@@ -114,7 +114,7 @@
                   <span class="has-text-primary">Products</span>
                 </h1>
               <div class="columns is-variable is-4 is-multiline">
-               @foreach ( $products as $product )
+               @foreach ( $catproducts->products as $product )
                     <div class="column is-4" data-aos="fade">
                         <div class="work-item">
                         <figure>
@@ -200,82 +200,9 @@
             <!-- .pagination -->
             <br> </div>
         </section>
-
-        <section id="welcome" class="section welcome-section has-background-primary-light is-clearfix">
-            <div class="container">
-              <p class="heading-title-top has-text-centered">welcome logistics</p>
-              <h1 class="heading-title style-3"> Our Popular
-                <span class="has-text-primary">Sections</span>
-              </h1>
-              <br>
-              <br>
-              <div class="blog-list style-2 columns is-variable is-4 is-multiline">
-                <div class="owl-carousel owl-theme">
-                    @foreach ( $cats as $cat)
-                        <div class=" item" >
-                            <article class="blog-post">
-                            <figure class="post-image">
-                                <a href="{{ route('allproducts.show',$cat->id) }}">
-                                <img alt="Joo - Niche Multi-Purpose HTML Template" src="{{ asset('uploads/cat/'. $cat->image) }}"> </a>
-                            </figure>
-                            <div class="entry-header">
-                                <h2 class="entry-title">
-                                <a href="#">{{ $cat->cat_name}}</a>
-                                </h2>
-
-                            </div>
-                            <!-- .entry-header -->
-                            <div class="entry-content">
-                                <p>{{ $cat->desc }}</p>
-
-                            </div>
-                            <!-- .entry-content -->
-                            <div class="entry-footer">
-                                <a href="#" class="button">More details</a>
-                            </div>
-                            </article>
-                            <!-- .blog-post -->
-                        </div>
-                    @endforeach
-               </div>
-              </div>
-              <br> </div>
-          </section>
-        <!-- . -->
-        {{-- <section class="section  is-clearfix">
-          <div class="container">
-            <nav class="level counterup ">
-              <div class="level-item has-text-centered">
-                <div>
-                  <p class="title counter">70</p>
-                  <p class="heading">awards won</p>
-                </div>
-              </div>
-              <div class="level-item has-text-centered">
-                <div>
-                  <p class="title counter">48</p>
-                  <p class="heading">satisfied clients</p>
-                </div>
-              </div>
-              <div class="level-item has-text-centered">
-                <div>
-                  <p class="title counter">56</p>
-                  <p class="heading">startup growth</p>
-                </div>
-              </div>
-              <div class="level-item has-text-centered">
-                <div>
-                  <p class="title counter">28</p>
-                  <p class="heading">average prices</p>
-                </div>
-              </div>
-            </nav>
-            <!-- .counterup -->
-          </div>
-        </section> --}}
-      </div>
-      <!-- #content-area-inner -->
     </div>
-    <!-- #content-area -->
+    <!-- #content-area-inner -->
   </div>
+  <!-- #content-area -->
+</div>
 @endsection
