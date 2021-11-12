@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
+use App\Models\ClientFeedback;
 use App\Models\Product;
 use App\Models\Service;
 use Illuminate\Http\Request;
@@ -12,7 +13,8 @@ class FrontendController extends Controller
     public function index(){
         $products = Product::where('trending','1')->take(10)->get();
         $servs = Service::orderBy('id','DESC')->limit(6)->get();
-        return view('welcome',compact('products','servs'));
+        $feedbacks = ClientFeedback::orderBy('id','DESC')->limit(6)->get();
+        return view('welcome',compact('products','servs','feedbacks'));
     }
     public function create()
     {

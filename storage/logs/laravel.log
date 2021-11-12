@@ -3238,3 +3238,23 @@ Did you mean one of these?
 #54 D:\\2-code\\shipping-app-v1\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #55 {main}
 "} 
+[2021-11-12 22:24:29] local.ERROR: syntax error, unexpected '$cli' (T_VARIABLE) {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected '$cli' (T_VARIABLE) at D:\\2-code\\shipping-app-v1\\app\\Models\\ClientFeedback.php:13)
+[stacktrace]
+#0 {main}
+"} 
+[2021-11-12 22:24:31] local.ERROR: syntax error, unexpected '$cli' (T_VARIABLE) {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected '$cli' (T_VARIABLE) at D:\\2-code\\shipping-app-v1\\app\\Models\\ClientFeedback.php:13)
+[stacktrace]
+#0 {main}
+"} 
+[2021-11-12 22:25:15] local.ERROR: syntax error, unexpected '}', expecting ';' {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected '}', expecting ';' at D:\\2-code\\shipping-app-v1\\app\\Models\\ClientFeedback.php:15)
+[stacktrace]
+#0 {main}
+"} 
+[2021-11-12 23:02:25] local.ERROR: Cannot redeclare App\Models\ClientFeedback::client() {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot redeclare App\\Models\\ClientFeedback::client() at D:\\2-code\\shipping-app-v1\\app\\Models\\ClientFeedback.php:16)
+[stacktrace]
+#0 {main}
+"} 
+[2021-11-12 23:02:30] local.ERROR: syntax error, unexpected '(' {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected '(' at D:\\2-code\\shipping-app-v1\\app\\Models\\ClientFeedback.php:16)
+[stacktrace]
+#0 {main}
+"} 

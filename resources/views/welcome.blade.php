@@ -407,78 +407,17 @@
       <p class="heading-title-top has-text-centered">testimonial</p>
       <h1 class="heading-title style-3">clients feedback</h1>
       <div class="testimonials  owl-carousel dots carousel-items-3 columns-style-1 ">
-        <div class="testimonials-item">
-          <p>Any time we start something new it is exciting and we are very motivated and committed. As time goes by</p>
-          <img alt="Joo - Niche Multi-Purpose HTML Template" src="{{ asset('front/images/testimonials/1.png') }}">
-          <h3>mohamed ahmed
-            <br>
-            <span>CEO & stylist</span>
-          </h3>
-        </div>
-        <div class="testimonials-item">
-          <p>Any time we start something new it is exciting and we are very motivated and committed. As time goes by</p>
-          <img alt="Joo - Niche Multi-Purpose HTML Template" src="{{ asset('front/images/testimonials/2.png') }}">
-          <h3>olivia allison
-            <br>
-            <span>CEO & stylist</span>
-          </h3>
-        </div>
-        <div class="testimonials-item">
-          <p>Any time we start something new it is exciting and we are very motivated and committed. As time goes by</p>
-          <img alt="Joo - Niche Multi-Purpose HTML Template" src="{{ asset('front/images/testimonials/3.png') }}">
-          <h3>olivia allison
-            <br>
-            <span>CEO & stylist</span>
-          </h3>
-        </div>
-        <div class="testimonials-item">
-          <p>Any time we start something new it is exciting and we are very motivated and committed. As time goes by</p>
-          <img alt="Joo - Niche Multi-Purpose HTML Template" src="{{ asset('front/images/testimonials/1.png') }}">
-          <h3>mohamed ahmed
-            <br>
-            <span>CEO & stylist</span>
-          </h3>
-        </div>
-        <div class="testimonials-item">
-          <p>Any time we start something new it is exciting and we are very motivated and committed. As time goes by</p>
-          <img alt="Joo - Niche Multi-Purpose HTML Template" src="{{ asset('front/images/testimonials/2.png') }}">
-          <h3>olivia allison
-            <br>
-            <span>CEO & stylist</span>
-          </h3>
-        </div>
-        <div class="testimonials-item">
-          <p>Any time we start something new it is exciting and we are very motivated and committed. As time goes by</p>
-          <img alt="Joo - Niche Multi-Purpose HTML Template" src="{{ asset('front/images/testimonials/3.png') }}">
-          <h3>olivia allison
-            <br>
-            <span>CEO & stylist</span>
-          </h3>
-        </div>
-        <div class="testimonials-item">
-          <p>Any time we start something new it is exciting and we are very motivated and committed. As time goes by</p>
-          <img alt="Joo - Niche Multi-Purpose HTML Template" src="{{ asset('front/images/testimonials/1.png') }}">
-          <h3>mohamed ahmed
-            <br>
-            <span>CEO & stylist</span>
-          </h3>
-        </div>
-        <div class="testimonials-item">
-          <p>Any time we start something new it is exciting and we are very motivated and committed. As time goes by</p>
-          <img alt="Joo - Niche Multi-Purpose HTML Template" src="{{ asset('front/images/testimonials/2.png') }}">
-          <h3>olivia allison
-            <br>
-            <span>CEO & stylist</span>
-          </h3>
-        </div>
-        <div class="testimonials-item">
-          <p>Any time we start something new it is exciting and we are very motivated and committed. As time goes by</p>
-          <img alt="Joo - Niche Multi-Purpose HTML Template" src="{{ asset('front/images/testimonials/3.png') }}">
-          <h3>olivia allison
-            <br>
-            <span>CEO & stylist</span>
-          </h3>
-        </div>
+
+       @foreach ( $feedbacks as $feedback)
+       <div class="testimonials-item">
+        <p>{{ $feedback->feedback }}</p>
+        <img alt="Joo - Niche Multi-Purpose HTML Template" src="{{ asset('uploads/user-img/'. $feedback->client->image) }}">
+        <h3>{{ $feedback->client->name }}
+          <br>
+          <span>{{ $feedback->serv->serve_name}} Services</span>
+        </h3>
+      </div>
+       @endforeach
       </div>
     </div>
   </section>

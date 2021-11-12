@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Admin;
 
 use App\Models\ClientFeedback;
 use App\Http\Controllers\Controller;
+use App\Models\Service;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 
@@ -16,7 +18,8 @@ class ClientFeedbackController extends Controller
      */
     public function index()
     {
-        //
+        $feedbacks = ClientFeedback::all();
+        return view('admin.feedback.index',compact('feedbacks'));
     }
 
     /**
@@ -26,7 +29,9 @@ class ClientFeedbackController extends Controller
      */
     public function create()
     {
-        //
+        $servs=Service::all();
+        $clients = User::where('roles_name','["client"]')->get();
+        return view('admin.feedback.create',compact('servs','clients'));
     }
 
     /**
@@ -37,7 +42,18 @@ class ClientFeedbackController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        try {
+            $feedback = new ClientFeedback();
+            $feedback->user_id = $request->client_id;
+            $feedback->serv_id = $request->serv_id;
+            $feedback->feedback = $request->feedback;
+            $feedback->save();
+            toastr()->success(__('feedback create successfully'));
+            return redirect()->route('feedback.index');
+        }
+        catch (\Exception $e){
+            return redirect()->back()->withErrors(['error' => $e->getMessage()]);
+        }
     }
 
     /**

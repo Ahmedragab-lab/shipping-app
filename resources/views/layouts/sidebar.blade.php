@@ -59,6 +59,12 @@
               <div class="clearfix"></div>
             </a>
           </li>
+          <li>
+            <a href="{{ route('feedback.index') }}">
+              <div class="pull-left"><i class="fa fa-times-rectangle"></i><span class="right-nav-text">{{ __('site.feedback') }}</span></div>
+              <div class="clearfix"></div>
+            </a>
+          </li>
         </ul>
     </div>
   </div>
