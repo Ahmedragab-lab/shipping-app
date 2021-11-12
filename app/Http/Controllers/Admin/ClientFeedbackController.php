@@ -73,9 +73,12 @@ class ClientFeedbackController extends Controller
      * @param  \App\Models\ClientFeedback  $clientFeedback
      * @return \Illuminate\Http\Response
      */
-    public function edit(ClientFeedback $clientFeedback)
+    public function edit($id)
     {
-        //
+        $feedback = ClientFeedback::findorfail($id);
+        $servs=Service::all();
+        $clients = User::where('roles_name','["client"]')->get();
+        return view('admin.feedback.edit',compact('servs','clients','feedback'));
     }
 
     /**
@@ -85,9 +88,20 @@ class ClientFeedbackController extends Controller
      * @param  \App\Models\ClientFeedback  $clientFeedback
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, ClientFeedback $clientFeedback)
+    public function update(Request $request, $id)
     {
-        //
+        try {
+            $feedback = ClientFeedback::findorfail($id);
+            $feedback->user_id = $request->client_id;
+            $feedback->serv_id = $request->serv_id;
+            $feedback->feedback = $request->feedback;
+            $feedback->update();
+            toastr()->success(__('feedback updated successfully'));
+            return redirect()->route('feedback.index');
+        }
+        catch (\Exception $e){
+            return redirect()->back()->withErrors(['error' => $e->getMessage()]);
+        }
     }
 
     /**
@@ -96,8 +110,15 @@ class ClientFeedbackController extends Controller
      * @param  \App\Models\ClientFeedback  $clientFeedback
      * @return \Illuminate\Http\Response
      */
-    public function destroy(ClientFeedback $clientFeedback)
+    public function destroy($id)
     {
-        //
+        try{
+            $feedback = ClientFeedback::findorfail($id);
+            $feedback->delete();
+            toastr()->error(__('feedback deleted successfully'));
+            return redirect()->route('feedback.index');
+        }catch (\Exception $e){
+                return redirect()->back()->withErrors(['error' => $e->getMessage()]);
+            }
     }
 }

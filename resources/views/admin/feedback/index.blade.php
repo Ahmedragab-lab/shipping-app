@@ -54,7 +54,7 @@
                                             <td>{{ $feedback->feedback }}</td>
                                             <td>{{ $feedback->serv->serve_name}}</td>
                                             <td>
-                                                <a href="{{ route('serv.edit',$feedback->id) }}" class="btn btn-info btn-sm" role="button" aria-pressed="true" title="edit">
+                                                <a href="{{ route('feedback.edit',$feedback->id) }}" class="btn btn-info btn-sm" role="button" aria-pressed="true" title="edit">
                                                     <i class="fa fa-edit"></i>
                                                 </a>
                                                 <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#delete_feedback{{ $feedback->id }}" title="delete">
@@ -62,7 +62,7 @@
                                                 </button>
                                             </td>
                                         </tr>
-                                    {{-- @include('admin.services.delete') --}}
+                                    @include('admin.services.delete')
                                     @endforeach
                                 </table>
                             </div>

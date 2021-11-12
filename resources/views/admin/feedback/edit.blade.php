@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('css')
   @section('title')
-  services
+  feedback
   @stop
 @endsection
 {{-- start content  --}}
@@ -14,7 +14,7 @@
             </div>
             <div class="col-sm-6">
                 <ol class="breadcrumb pt-0 pr-0 float-left float-sm-right">
-                    <li class="breadcrumb-item"><a href="{{ route('serv.index') }}" class="default-color">Edit services</a></li>
+                    <li class="breadcrumb-item"><a href="{{ route('serv.index') }}" class="default-color">Edit feedback</a></li>
                     <li class="breadcrumb-item active">{{ __('table') }}</li>
                 </ol>
             </div>
@@ -25,29 +25,32 @@
          <h4>Add Categorie</h4>
        </div> --}}
        <div class="card-body">
-         <form action="{{ route('serv.update',$serv->id) }}" method="post" autocomplete="off" enctype="multipart/form-data">
+         <form action="{{ route('feedback.update',$feedback->id) }}" method="post" autocomplete="off" >
             @csrf
             @method('PUT')
             <div class="row">
                 <div class="col-md-6 mb-3">
-                    <label for="">service name</label>
-                    <input type="text" placeholder="Enter service name" name="serve_name" class="form-control" value="{{ $serv->serve_name }}">
+                    <label for="">Client name</label>
+                    <select name="client_id" id="" class="form-control" style="padding:10px;">
+                        <option value="{{ $feedback->client->id }}" readonly>{{ $feedback->client->name }}</option>
+                        @foreach ($clients as $client)
+                          <option value="{{ $client->id }}">{{ $client->name }}</option>
+                        @endforeach
+                    </select>
                 </div>
                 <div class="col-md-6 mb-3">
-                   <label for="status">status</label>
-                   <input type="checkbox"  name="status" {{ $serv->status == 1?'checked':'' }} >
+                    <label for="">service name</label>
+                    <select name="serv_id" id="" class="form-control" style="padding:10px;">
+                        <option value="{{ $feedback->serv->id}}" readonly>{{ $feedback->serv->serve_name}}</option>
+                        @foreach ($servs as $serv)
+                          <option value="{{ $serv->id }}">{{ $serv->serve_name }}</option>
+                        @endforeach
+                    </select>
                 </div>
                 <div class="col-md-12 mb-3">
-                   <label for="desc">Description</label>
-                    <textarea name="desc" id=""  rows="3" class="form-control"> {{ $serv->desc }}</textarea>
+                   <label for="desc">Your Feedback</label>
+                    <textarea name="feedback" id=""  rows="3" class="form-control">{{ $feedback->feedback}}</textarea>
                 </div>
-               <div class="col-lg-6">
-                   <label>Add image :  <span style="color:rgb(199, 8, 8)">*</span></label>
-                   <input class="form-control img" name="image"  type="file">
-               </div>
-               <div class="col-lg-6 mb-3">
-                   <img src="{{ asset('uploads/serv/'. $serv->image) }}" class="img-thumbnail img-preview" width="100" alt="no photo">
-               </div>
 
                 <div class="col-md-12 mb-3">
                    <button type="submit" class="btn btn-primary">Save</button>
