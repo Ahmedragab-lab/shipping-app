@@ -12,14 +12,7 @@ class User extends Authenticatable
     use HasFactory, Notifiable,HasRoles;
 
 
-    protected $fillable = [
-        'name',
-        'email',
-        'password',
-        'image',
-        'roles_name',
-        'status',
-    ];
+    protected $guarded = [];
 
     /**
      * The attributes that should be hidden for arrays.

@@ -22,6 +22,8 @@ class CreateUsersTable extends Migration
             $table->string('image')->default('default.jpg');
             $table->text('roles_name');
             $table->string('status',10)->default('unactive');
+            $table->string('phone')->nullable();
+            $table->text('address')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

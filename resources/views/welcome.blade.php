@@ -12,81 +12,81 @@
               <a href="#welcome" class="slider-scroll-down">scroll down</a>
               <ul>
                 <li data-transition="fade" data-thumb="{{ asset('front/images/icons/1.png') }}" data-title="warehousing" data-param1="Lorem ipsum dolor sit ultrices eleifend gravi." data-param2="{{ asset('front/images/icons/1.png') }}">
-                  <img alt="Joo - Niche Multi-Purpose HTML Template" class="rev-slidebg" src="{{ asset('front/images/slider/4.png') }}" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-kenburns="off" data-duration="30000" data-ease="Linear.easeNone"
-                    data-scalestart="100" data-scaleend="115" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="15">
-                  <div class="tp-caption tp-resizeme small_text top" data-x="left" data-hoffset="['-105','-105','0','0']" data-y="center" data-voffset="['-152','-152','-152','-152']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text"
-                    data-responsive-offset="on" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1600,"to":"o:1;","delay":800,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"opacity:0;","ease":"nothing"}]'
-                    data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"> logistics cargo </div>
-                  <div class="tp-caption tp-resizeme large_text" data-x="left" data-hoffset="['-105','-105','0','0']" data-y="center" data-voffset="['-56','-56','-56','-56']" data-width="none" data-height="none" data-whitespace="nowrap"
-                    data-type="text" data-responsive-offset="on" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1600,"to":"o:1;","delay":1200,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"opacity:0;","ease":"nothing"}]'
-                    data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"> local pickup and delivery
-                    <br> services of any cargo. </div>
-                  <a class="tp-caption tp-resizeme button is-primary" href="#" data-frames='[{"delay":1600,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":800,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-                    data-x="left" data-hoffset="['-102','-102','0','0']" data-y="center" data-voffset="['82','82','0','0']" data-type="button">
-                    <span>learn More</span>
-                    <span class="icon is-small">
-                      <i class="ion-ios-arrow-round-forward"></i>
-                    </span>
-                  </a>
-                </li>
-                <!-- slide -->
-                <li data-transition="fade" data-thumb="{{ asset('front/images/icons/2.png') }}" data-title="air freight" data-param1="Lorem ipsum dolor sit ultrices eleifend gravi." data-param2="{{ asset('front/images/icons/2.png') }}">
-                  <img alt="Joo - Niche Multi-Purpose HTML Template" class="rev-slidebg" src="{{ asset('front/images/slider/3.png') }}" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-kenburns="off" data-duration="30000" data-ease="Linear.easeNone"
-                    data-scalestart="100" data-scaleend="115" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="15">
-                  <div class="tp-caption tp-resizeme small_text top" data-x="left" data-hoffset="['-105','-105','0','0']" data-y="center" data-voffset="['-152','-152','-152','-152']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text"
-                    data-responsive-offset="on" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1600,"to":"o:1;","delay":800,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"opacity:0;","ease":"nothing"}]'
-                    data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"> logistics cargo </div>
-                  <div class="tp-caption tp-resizeme large_text" data-x="left" data-hoffset="['-105','-105','0','0']" data-y="center" data-voffset="['-56','-56','-56','-56']" data-width="none" data-height="none" data-whitespace="nowrap"
-                    data-type="text" data-responsive-offset="on" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1600,"to":"o:1;","delay":1200,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"opacity:0;","ease":"nothing"}]'
-                    data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"> local pickup and delivery
-                    <br> services of any cargo. </div>
-                  <a class="tp-caption tp-resizeme button is-primary" href="#" data-frames='[{"delay":1600,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":800,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-                    data-x="left" data-hoffset="['-102','-102','0','0']" data-y="center" data-voffset="['82','82','0','0']" data-type="button">
-                    <span>learn More</span>
-                    <span class="icon is-small">
-                      <i class="ion-ios-arrow-round-forward"></i>
-                    </span>
-                  </a>
-                </li>
-                <!-- slide -->
-                <li data-transition="fade" data-thumb="{{ asset('front/images/icons/3.png') }}" data-title="ocean freight" data-param1="Lorem ipsum dolor sit ultrices eleifend gravi." data-param2="{{ asset('front/images/icons/3.png') }}">
-                  <img alt="Joo - Niche Multi-Purpose HTML Template" class="rev-slidebg" src="{{ asset('front/images/slider/2.png') }}" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-kenburns="off" data-duration="30000" data-ease="Linear.easeNone"
-                    data-scalestart="100" data-scaleend="115" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="15">
-                  <div class="tp-caption tp-resizeme small_text top" data-x="left" data-hoffset="['-105','-105','0','0']" data-y="center" data-voffset="['-152','-152','-152','-152']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text"
-                    data-responsive-offset="on" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1600,"to":"o:1;","delay":800,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"opacity:0;","ease":"nothing"}]'
-                    data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"> logistics cargo </div>
-                  <div class="tp-caption tp-resizeme large_text" data-x="left" data-hoffset="['-105','-105','0','0']" data-y="center" data-voffset="['-56','-56','-56','-56']" data-width="none" data-height="none" data-whitespace="nowrap"
-                    data-type="text" data-responsive-offset="on" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1600,"to":"o:1;","delay":1200,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"opacity:0;","ease":"nothing"}]'
-                    data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"> local pickup and delivery
-                    <br> services of any cargo. </div>
-                  <a class="tp-caption tp-resizeme button is-primary" href="#" data-frames='[{"delay":1600,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":800,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-                    data-x="left" data-hoffset="['-102','-102','0','0']" data-y="center" data-voffset="['82','82','0','0']" data-type="button">
-                    <span>learn More</span>
-                    <span class="icon is-small">
-                      <i class="ion-ios-arrow-round-forward"></i>
-                    </span>
-                  </a>
-                </li>
-                <!-- slide -->
-                <li data-transition="fade" data-thumb="{{ asset('front/images/icons/4.png') }}" data-title="land transport" data-param1="Lorem ipsum dolor sit ultrices eleifend gravi." data-param2="{{ asset('front/images/icons/4.png') }}">
-                  <img alt="Joo - Niche Multi-Purpose HTML Template" class="rev-slidebg" src="{{ asset('front/images/slider/1.png') }}" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-kenburns="off" data-duration="30000" data-ease="Linear.easeNone"
-                    data-scalestart="100" data-scaleend="115" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="15">
-                  <div class="tp-caption tp-resizeme small_text top" data-x="left" data-hoffset="['-105','-105','0','0']" data-y="center" data-voffset="['-152','-152','-152','-152']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text"
-                    data-responsive-offset="on" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1600,"to":"o:1;","delay":800,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"opacity:0;","ease":"nothing"}]'
-                    data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"> logistics cargo </div>
-                  <div class="tp-caption tp-resizeme large_text" data-x="left" data-hoffset="['-105','-105','0','0']" data-y="center" data-voffset="['-56','-56','-56','-56']" data-width="none" data-height="none" data-whitespace="nowrap"
-                    data-type="text" data-responsive-offset="on" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1600,"to":"o:1;","delay":1200,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"opacity:0;","ease":"nothing"}]'
-                    data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"> local pickup and delivery
-                    <br> services of any cargo. </div>
-                  <a class="tp-caption tp-resizeme button is-primary" href="#" data-frames='[{"delay":1600,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":800,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-                    data-x="left" data-hoffset="['-102','-102','0','0']" data-y="center" data-voffset="['82','82','0','0']" data-type="button">
-                    <span>learn More</span>
-                    <span class="icon is-small">
-                      <i class="ion-ios-arrow-round-forward"></i>
-                    </span>
-                  </a>
-                </li>
-                <!-- slide -->
+                    <img alt="Joo - Niche Multi-Purpose HTML Template" class="rev-slidebg" src="{{ asset('front/images/slider/4.png') }}" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-kenburns="off" data-duration="30000" data-ease="Linear.easeNone"
+                      data-scalestart="100" data-scaleend="115" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="15">
+                    <div class="tp-caption tp-resizeme small_text top" data-x="left" data-hoffset="['-105','-105','0','0']" data-y="center" data-voffset="['-152','-152','-152','-152']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text"
+                      data-responsive-offset="on" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1600,"to":"o:1;","delay":800,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"opacity:0;","ease":"nothing"}]'
+                      data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"> logistics cargo </div>
+                    <div class="tp-caption tp-resizeme large_text" data-x="left" data-hoffset="['-105','-105','0','0']" data-y="center" data-voffset="['-56','-56','-56','-56']" data-width="none" data-height="none" data-whitespace="nowrap"
+                      data-type="text" data-responsive-offset="on" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1600,"to":"o:1;","delay":1200,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"opacity:0;","ease":"nothing"}]'
+                      data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"> local pickup and delivery
+                      <br> services of any cargo. </div>
+                    <a class="tp-caption tp-resizeme button is-primary" href="#" data-frames='[{"delay":1600,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":800,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+                      data-x="left" data-hoffset="['-102','-102','0','0']" data-y="center" data-voffset="['82','82','0','0']" data-type="button">
+                      <span>learn More</span>
+                      <span class="icon is-small">
+                        <i class="ion-ios-arrow-round-forward"></i>
+                      </span>
+                    </a>
+                  </li>
+                  <!-- slide -->
+                  <li data-transition="fade" data-thumb="{{ asset('front/images/icons/2.png') }}" data-title="air freight" data-param1="Lorem ipsum dolor sit ultrices eleifend gravi." data-param2="{{ asset('front/images/icons/2.png') }}">
+                    <img alt="Joo - Niche Multi-Purpose HTML Template" class="rev-slidebg" src="{{ asset('front/images/slider/3.png') }}" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-kenburns="off" data-duration="30000" data-ease="Linear.easeNone"
+                      data-scalestart="100" data-scaleend="115" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="15">
+                    <div class="tp-caption tp-resizeme small_text top" data-x="left" data-hoffset="['-105','-105','0','0']" data-y="center" data-voffset="['-152','-152','-152','-152']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text"
+                      data-responsive-offset="on" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1600,"to":"o:1;","delay":800,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"opacity:0;","ease":"nothing"}]'
+                      data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"> logistics cargo </div>
+                    <div class="tp-caption tp-resizeme large_text" data-x="left" data-hoffset="['-105','-105','0','0']" data-y="center" data-voffset="['-56','-56','-56','-56']" data-width="none" data-height="none" data-whitespace="nowrap"
+                      data-type="text" data-responsive-offset="on" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1600,"to":"o:1;","delay":1200,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"opacity:0;","ease":"nothing"}]'
+                      data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"> local pickup and delivery
+                      <br> services of any cargo. </div>
+                    <a class="tp-caption tp-resizeme button is-primary" href="#" data-frames='[{"delay":1600,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":800,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+                      data-x="left" data-hoffset="['-102','-102','0','0']" data-y="center" data-voffset="['82','82','0','0']" data-type="button">
+                      <span>learn More</span>
+                      <span class="icon is-small">
+                        <i class="ion-ios-arrow-round-forward"></i>
+                      </span>
+                    </a>
+                  </li>
+                  <!-- slide -->
+                  <li data-transition="fade" data-thumb="{{ asset('front/images/icons/3.png') }}" data-title="ocean freight" data-param1="Lorem ipsum dolor sit ultrices eleifend gravi." data-param2="{{ asset('front/images/icons/3.png') }}">
+                    <img alt="Joo - Niche Multi-Purpose HTML Template" class="rev-slidebg" src="{{ asset('front/images/slider/2.png') }}" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-kenburns="off" data-duration="30000" data-ease="Linear.easeNone"
+                      data-scalestart="100" data-scaleend="115" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="15">
+                    <div class="tp-caption tp-resizeme small_text top" data-x="left" data-hoffset="['-105','-105','0','0']" data-y="center" data-voffset="['-152','-152','-152','-152']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text"
+                      data-responsive-offset="on" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1600,"to":"o:1;","delay":800,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"opacity:0;","ease":"nothing"}]'
+                      data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"> logistics cargo </div>
+                    <div class="tp-caption tp-resizeme large_text" data-x="left" data-hoffset="['-105','-105','0','0']" data-y="center" data-voffset="['-56','-56','-56','-56']" data-width="none" data-height="none" data-whitespace="nowrap"
+                      data-type="text" data-responsive-offset="on" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1600,"to":"o:1;","delay":1200,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"opacity:0;","ease":"nothing"}]'
+                      data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"> local pickup and delivery
+                      <br> services of any cargo. </div>
+                    <a class="tp-caption tp-resizeme button is-primary" href="#" data-frames='[{"delay":1600,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":800,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+                      data-x="left" data-hoffset="['-102','-102','0','0']" data-y="center" data-voffset="['82','82','0','0']" data-type="button">
+                      <span>learn More</span>
+                      <span class="icon is-small">
+                        <i class="ion-ios-arrow-round-forward"></i>
+                      </span>
+                    </a>
+                  </li>
+                  <!-- slide -->
+                  <li data-transition="fade" data-thumb="{{ asset('front/images/icons/4.png') }}" data-title="land transport" data-param1="Lorem ipsum dolor sit ultrices eleifend gravi." data-param2="{{ asset('front/images/icons/4.png') }}">
+                    <img alt="Joo - Niche Multi-Purpose HTML Template" class="rev-slidebg" src="{{ asset('front/images/slider/1.png') }}" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-kenburns="off" data-duration="30000" data-ease="Linear.easeNone"
+                      data-scalestart="100" data-scaleend="115" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="15">
+                    <div class="tp-caption tp-resizeme small_text top" data-x="left" data-hoffset="['-105','-105','0','0']" data-y="center" data-voffset="['-152','-152','-152','-152']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text"
+                      data-responsive-offset="on" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1600,"to":"o:1;","delay":800,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"opacity:0;","ease":"nothing"}]'
+                      data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"> logistics cargo </div>
+                    <div class="tp-caption tp-resizeme large_text" data-x="left" data-hoffset="['-105','-105','0','0']" data-y="center" data-voffset="['-56','-56','-56','-56']" data-width="none" data-height="none" data-whitespace="nowrap"
+                      data-type="text" data-responsive-offset="on" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1600,"to":"o:1;","delay":1200,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"opacity:0;","ease":"nothing"}]'
+                      data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"> local pickup and delivery
+                      <br> services of any cargo. </div>
+                    <a class="tp-caption tp-resizeme button is-primary" href="#" data-frames='[{"delay":1600,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":800,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
+                      data-x="left" data-hoffset="['-102','-102','0','0']" data-y="center" data-voffset="['82','82','0','0']" data-type="button">
+                      <span>learn More</span>
+                      <span class="icon is-small">
+                        <i class="ion-ios-arrow-round-forward"></i>
+                      </span>
+                    </a>
+                  </li>
+                  <!-- slide -->
               </ul>
             </div>
             <!-- .rev_slider -->
@@ -175,7 +175,8 @@
       </div>
     </div>
   </section>
-  <section id="services" class="section services-section has-background-primary-light is-clearfix">
+ {{-- section services=================================================================================================================== --}}
+ <section id="services" class="section services-section has-background-primary-light is-clearfix">
     <div class="container">
       <div class="columns is-variable is-multiline is-4">
         <div class="column is-5-desktop is-12-tablet">
@@ -188,84 +189,28 @@
       </div>
       <br>
       <div class="columns is-variable is-4 is-multiline boxes-style-2">
-       @foreach ( $servs as $serv)
-        <div class="column is-4" >
-            <div class="box-item">
-            <a href="#">
-                {{-- <img alt="Joo - Niche Multi-Purpose HTML Template" src="{{ asset('front/images/icons/4.png') }}"> </a> --}}
-                <img alt="Joo - Niche Multi-Purpose HTML Template" src="{{ asset('uploads/serv/'.$serv->image) }}" style="max-height: 344px ;"> </a>
-            <h3>
-                <a href="#">{{ $serv->serve_name }}</a>
-            </h3>
-            <p>{{ $serv->desc }}</p>
-            <a href="#" class="button"></a>
-            </div>
-            <!-- .box-item -->
-        </div>
-       @endforeach
-        {{-- <div class="column is-4" data-aos="fade">
-          <div class="box-item">
-            <a href="./pages/services.html">
-              <img alt="Joo - Niche Multi-Purpose HTML Template" src="{{ asset('front/images/icons/3.png') }}"> </a>
-            <h3>
-              <a href="./pages/services.html">ocean freight</a>
-            </h3>
-            <p>Climatology chronocrator puppysnatch leacher unrived tomentum.</p>
-            <a href="./pages/services.html" class="button"></a>
-          </div>
-          <!-- .box-item -->
-        </div>
-        <div class="column is-4" data-aos="fade">
-          <div class="box-item">
-            <a href="./pages/services.html">
-              <img alt="Joo - Niche Multi-Purpose HTML Template" src="{{ asset('front/images/icons/1.png') }}"> </a>
-            <h3>
-              <a href="./pages/services.html">warehousing</a>
-            </h3>
-            <p>Climatology chronocrator puppysnatch leacher unrived tomentum.</p>
-            <a href="./pages/services.html" class="button"></a>
-          </div>
-          <!-- .box-item -->
-        </div>
-        <div class="column is-4" data-aos="fade">
-          <div class="box-item">
-            <a href="./pages/services.html">
-              <img alt="Joo - Niche Multi-Purpose HTML Template" src="{{ asset('front/images/icons/4.png') }}"> </a>
-            <h3>
-              <a href="./pages/services.html">ocean freight</a>
-            </h3>
-            <p>Climatology chronocrator puppysnatch leacher unrived tomentum.</p>
-            <a href="./pages/services.html" class="button"></a>
-          </div>
-          <!-- .box-item -->
-        </div>
-        <div class="column is-4" data-aos="fade">
-          <div class="box-item">
-            <a href="./pages/services.html">
-              <img alt="Joo - Niche Multi-Purpose HTML Template" src="{{ asset('front/images/icons/4.png') }}"> </a>
-            <h3>
-              <a href="./pages/services.html">land transport</a>
-            </h3>
-            <p>Climatology chronocrator puppysnatch leacher unrived tomentum.</p>
-            <a href="./pages/services.html" class="button"></a>
-          </div>
-          <!-- .box-item -->
-        </div>
-        <div class="column is-4" data-aos="fade">
-          <div class="box-item">
-            <a href="./pages/services.html">
-              <img alt="Joo - Niche Multi-Purpose HTML Template" src="{{ asset('front/images/icons/2.png') }}"> </a>
-            <h3>
-              <a href="./pages/services.html">air freight</a>
-            </h3>
-            <p>Climatology chronocrator puppysnatch leacher unrived tomentum.</p>
-            <a href="./pages/services.html" class="button"></a>
-          </div>
-          <!-- .box-item -->
-        </div> --}}
+          {{-- show services limit 6 in front home page --}}
+            @foreach ( $servs as $serv)
+                <div class="column is-4" >
+                    <div class="box-item">
+                    <a href="#">
+                        {{-- <img alt="Joo - Niche Multi-Purpose HTML Template" src="{{ asset('front/images/icons/4.png') }}">  --}}
+                        <img alt="no photo" src="{{ asset('uploads/serv/'.$serv->image) }}" style="max-height: 344px ;">
+                    </a>
+                    <h3>
+                        <a href="#">{{ $serv->serve_name }}</a>
+                    </h3>
+                    <p>{{ $serv->desc }}</p>
+                    <p>{{ $serv->status == 1 ?'Available':'Unavialable' }}</p>
+                    <a href="{{ route('order') }}" class="button"> Make Order</a>
+                    </div>
+                    <!-- .box-item -->
+                </div>
+            @endforeach
       </div>
     </div>
   </section>
+ {{-- End section services=================================================================================================================== --}}
   <section class="section watch-video is-clearfix">
     <div class="container">
       <br>
@@ -535,7 +480,7 @@
   <section id="quote" class="section quote-section padding-bottom-none is-clearfix">
     <div class="container">
       <div class="columns is-variable is-2 is-multiline">
-        <div class="column is-6-desktop is-12-tablet" data-aos="fade">
+        <div class="column is-6-desktop is-12-tablet" >
           <h1 class="heading-title style-3 has-text-left"> request a
             <span class="has-text-primary">quote</span>
           </h1>
@@ -602,12 +547,13 @@
             </div>
           </form>
         </div>
-        <div class="column is-6-desktop is-12-tablet" data-aos="fade-up" data-aos-delay="600">
+        <div class="column is-6-desktop is-12-tablet"  data-aos-delay="600">
           <br>
           <br>
           <br>
           <br>
-          <img alt="Joo - Niche Multi-Purpose HTML Template" src="./assets/images/global/man.png"> </div>
+          <img alt="Joo - Niche Multi-Purpose HTML Template" src="{{ asset('front/images/global/man.png') }}">
+        </div>
       </div>
     </div>
   </section>

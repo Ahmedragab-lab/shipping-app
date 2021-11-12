@@ -11,7 +11,7 @@ class FrontendController extends Controller
 {
     public function index(){
         $products = Product::where('trending','1')->take(10)->get();
-        $servs = Service::limit(6)->get();
+        $servs = Service::orderBy('id','DESC')->limit(6)->get();
         return view('welcome',compact('products','servs'));
     }
     public function create()

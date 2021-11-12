@@ -12,43 +12,43 @@
                 <nav class="clients-list level  owl-carousel no-dots carousel-items-5">
                   <div class="client-item has-text-centered level-item">
                     <a href="#" target="_blank">
-                      <img alt="Joo - Niche Multi-Purpose HTML Template" src="./assets/images/clients/7.png"> </a>
+                      <img alt="Joo - Niche Multi-Purpose HTML Template" src="{{ asset('front/images/clients/7.png') }}"> </a>
                   </div>
                   <div class="client-item has-text-centered level-item">
                     <a href="#" target="_blank">
-                      <img alt="Joo - Niche Multi-Purpose HTML Template" src="./assets/images/clients/8.png"> </a>
+                      <img alt="Joo - Niche Multi-Purpose HTML Template" src="{{ asset('front/images/clients/8.png') }}"> </a>
                   </div>
                   <div class="client-item has-text-centered level-item">
                     <a href="#" target="_blank">
-                      <img alt="Joo - Niche Multi-Purpose HTML Template" src="./assets/images/clients/9.png"> </a>
+                      <img alt="Joo - Niche Multi-Purpose HTML Template" src="{{ asset('front/images/clients/9.png') }}"> </a>
                   </div>
                   <div class="client-item has-text-centered level-item">
                     <a href="#" target="_blank">
-                      <img alt="Joo - Niche Multi-Purpose HTML Template" src="./assets/images/clients/7.png"> </a>
+                      <img alt="Joo - Niche Multi-Purpose HTML Template" src="{{ asset('front/images/clients/7.png') }}"> </a>
                   </div>
                   <div class="client-item has-text-centered level-item">
                     <a href="#" target="_blank">
-                      <img alt="Joo - Niche Multi-Purpose HTML Template" src="./assets/images/clients/8.png"> </a>
+                      <img alt="Joo - Niche Multi-Purpose HTML Template" src="{{ asset('front/images/clients/8.png') }}"> </a>
                   </div>
                   <div class="client-item has-text-centered level-item">
                     <a href="#" target="_blank">
-                      <img alt="Joo - Niche Multi-Purpose HTML Template" src="./assets/images/clients/9.png"> </a>
+                      <img alt="Joo - Niche Multi-Purpose HTML Template" src="{{ asset('front/images/clients/9.png') }}"> </a>
                   </div>
                   <div class="client-item has-text-centered level-item">
                     <a href="#" target="_blank">
-                      <img alt="Joo - Niche Multi-Purpose HTML Template" src="./assets/images/clients/7.png"> </a>
+                      <img alt="Joo - Niche Multi-Purpose HTML Template" src="{{ asset('front/images/clients/7.png') }}"> </a>
                   </div>
                   <div class="client-item has-text-centered level-item">
                     <a href="#" target="_blank">
-                      <img alt="Joo - Niche Multi-Purpose HTML Template" src="./assets/images/clients/8.png"> </a>
+                      <img alt="Joo - Niche Multi-Purpose HTML Template" src="{{ asset('front/images/clients/8.png') }}"> </a>
                   </div>
                   <div class="client-item has-text-centered level-item">
                     <a href="#" target="_blank">
-                      <img alt="Joo - Niche Multi-Purpose HTML Template" src="./assets/images/clients/9.png"> </a>
+                      <img alt="Joo - Niche Multi-Purpose HTML Template" src="{{ asset('front/images/clients/9.png') }}"> </a>
                   </div>
                   <div class="client-item has-text-centered level-item">
                     <a href="#" target="_blank">
-                      <img alt="Joo - Niche Multi-Purpose HTML Template" src="./assets/images/clients/7.png"> </a>
+                      <img alt="Joo - Niche Multi-Purpose HTML Template" src="{{ asset('front/images/clients/7.png') }}"> </a>
                   </div>
                 </nav>
               </div>
@@ -70,7 +70,7 @@
               <div class="textwidget">
                 <div id="footer-logo" class="site-logo ">
                   <a href="./index.html">
-                    <img alt="Joo - Niche Multi-Purpose HTML Template" src="./assets/images/logo/logo2.png">
+                    <img alt="Joo - Niche Multi-Purpose HTML Template" src="{{ asset('front/images/logo/logo2.png') }}">
                     <span class="logo-text">Logistics</span>
                   </a>
                 </div>
@@ -201,19 +201,16 @@
                   <nav class="main-navigation right">
                     <ul class="menu">
                       <li>
-                        <a href="./pages/about.html">about</a>
+                        <a href="{{ route('front') }}">Home</a>
                       </li>
                       <li>
-                        <a href="./pages/services.html">services</a>
+                        <a href="{{ route('allproducts.index')}}">All Products</a>
                       </li>
                       <li>
-                        <a href="./pages/pricing.html">pricing</a>
+                        <a href="{{ route('order') }}">services</a>
                       </li>
                       <li>
-                        <a href="./pages/sitemap.html">sitemap</a>
-                      </li>
-                      <li>
-                        <a href="./pages/contact.html">contact</a>
+                        <a href="{{ route('contactus') }}">Contact Us</a>
                       </li>
                     </ul>
                   </nav>

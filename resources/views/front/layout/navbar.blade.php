@@ -26,10 +26,10 @@
                     <a href="{{ route('allproducts.index')}}">Product</a>
                   </li>
                   <li>
-                    <a href="./pages/index.html">pages</a>
+                    <a href="{{ route('order') }}">services</a>
                   </li>
                   <li>
-                    <a href="./portfolio/index.html">portfolio</a>
+                    <a href="{{ route('contactus') }}">Contact Us</a>
                   </li>
                   @guest
                     <li class="btn-cta"><a href="/login"><span>Login</span></a></li>

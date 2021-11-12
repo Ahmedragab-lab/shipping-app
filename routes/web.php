@@ -23,7 +23,8 @@ Route::group(
                                  //============================
     Route::middleware(['auth'])->group(function () {
       Route::get('addtocart',[Frontend\CartController::class,'addtocart'])->name('addtocart');
-
+      Route::view('order', 'order-service')->name('order');
+      Route::view('contactus', 'contactus')->name('contactus');
      });
 
         //as admin ==================================================================================
