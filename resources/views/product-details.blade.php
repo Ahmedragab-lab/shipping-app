@@ -656,7 +656,7 @@
                 }
             });
             $.ajax({
-                method: "POST",
+                method: "Get",
                 url: "/addtocart",
                 data: {
                     'prod_id': prod_id,

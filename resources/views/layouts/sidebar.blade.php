@@ -46,6 +46,12 @@
 
             </ul>
           </li>
+          <li>
+            <a href="{{ route('serv.index') }}">
+              <div class="pull-left"><i class="fa fa-times-rectangle"></i><span class="right-nav-text">{{ __('site.serv') }}</span></div>
+              <div class="clearfix"></div>
+            </a>
+          </li>
         </ul>
     </div>
   </div>

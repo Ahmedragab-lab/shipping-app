@@ -22,7 +22,7 @@ Route::group(
         Route::resource('allproducts',Frontend\AllProducts::class);
                                  //============================
     Route::middleware(['auth'])->group(function () {
-      Route::post('addtocart',[Frontend\CartController::class,'addtocart'])->name('addtocart');
+      Route::get('addtocart',[Frontend\CartController::class,'addtocart'])->name('addtocart');
 
      });
 
@@ -34,6 +34,7 @@ Route::group(
            Route::resource('cats',Admin\CatController::class);
            Route::resource('products',Admin\ProductController::class);
            Route::resource('client',Admin\ClientController::class);
+           Route::resource('serv',Admin\ServiceController::class);
         });
     });
 //===================================================================================================
