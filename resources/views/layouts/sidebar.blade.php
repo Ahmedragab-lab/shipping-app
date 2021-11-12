@@ -52,6 +52,13 @@
               <div class="clearfix"></div>
             </a>
           </li>
+
+          <li>
+            <a href="{{ route('tracking_steps.index') }}">
+              <div class="pull-left"><i class="fa fa-times-rectangle"></i><span class="right-nav-text">{{ __('site.tracking-steps') }}</span></div>
+              <div class="clearfix"></div>
+            </a>
+          </li>
         </ul>
     </div>
   </div>

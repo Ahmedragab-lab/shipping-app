@@ -6,8 +6,8 @@
     animation: loader-figure .15s infinite cubic-bezier(.215,.61,.355,1);
 }
 .mfp-lightbox{
-    width: 700px;
-    height: 400px;
+    width: 500px;
+    height: 200px;
     margin: auto;
     position: absolute;
     right: 70px;

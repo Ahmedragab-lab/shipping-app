@@ -36,6 +36,7 @@ Route::group(
            Route::resource('products',Admin\ProductController::class);
            Route::resource('client',Admin\ClientController::class);
            Route::resource('serv',Admin\ServiceController::class);
+           Route::resource('tracking_steps',Admin\TrackingstepsController::class);
         });
     });
 //===================================================================================================

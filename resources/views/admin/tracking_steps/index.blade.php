@@ -1,0 +1,73 @@
+@extends('layouts.master')
+@section('css')
+    @toastr_css
+@section('title')
+   تتبع الشحنة
+@stop
+@endsection
+@section('page-header')
+    <!-- breadcrumb -->
+@section('PageTitle')
+تتبع الشحنة
+@stop
+<!-- breadcrumb -->
+@endsection
+@section('content')
+    <!-- row -->
+    <div class="row">
+        <div class="col-md-12 mb-30">
+            <div class="card card-statistics h-100">
+                <div class="card-body">
+                    <div class="col-xl-12 mb-30">
+                        <div class="card card-statistics h-100">
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table id="datatable" class="table  table-hover table-sm table-bordered p-0"
+                                           data-page-length="50"
+                                           style="text-align: center">
+                                        <thead>
+                                        <tr class="alert-success">
+                                            <th>#</th>
+                                            <th> id</th>
+                                            <th>order-no </th>
+                                            <th> step1</th>
+                                            <th> step2</th>
+                                            <th>step3</th>
+                                            <th>step4</th>
+                                            <th> date</th>
+                                        
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        @foreach($tracking_steps as $tracking_step)
+                                            <tr>
+                                            <td>{{ $loop->iteration }}</td>
+                                            <td>{{$tracking_step->id}}</td>
+                                            <td>{{$tracking_step->order-no}}</td>
+                                            <td>{{$tracking_step->step1}}</td>
+                                            <td>{{$tracking_step->step2}}</td>
+                                            <td>{{$tracking_step->step3}}</td>
+                                            <td>{{$tracking_step->step4}}</td>
+                                            <td>{{$tracking_step->date}}</td>
+                                                <td>
+                                                    <a href="{{route('tracking_steps.edit',$tracking_step->id)}}" class="btn btn-info btn-sm" role="button" aria-pressed="true"><i class="fa fa-edit"></i></a>
+                                                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#Delete_receipt{{$tracking_step->id}}" ><i class="fa fa-trash"></i></button>
+                                                </td>
+                                            </tr>
+                                        @include('admin.tracking_steps.Delete')
+                                        @endforeach
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- row closed -->
+@endsection
+@section('js')
+    @toastr_js
+    @toastr_render
+@endsection

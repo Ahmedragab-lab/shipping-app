@@ -71,18 +71,33 @@
             </ul>
             <!-- .header-menu-icons -->
             <ul class="nav-menu-dropdown style-2 on-click">
-              <li>
-                <a href="javascript:void(0);">
-                    <span class="flag-icon flag-icon-gb"></span>En
-                </a>
-                <ul>
-                  <li>
-                    <a href="javascript:void(0);">
-                      <span class="flag-icon flag-icon-eg"></span>ع</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
+                        <li>
+                            <span class="flag-icon flag-icon-{{App::getLocale() == 'en' ?'us':'eg'}}"></span><a href="javascript:void(0);">{{ LaravelLocalization::getCurrentLocale() }}</a>
+                            <ul>
+                                @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+                                    <li>
+                                        <a rel="alternate" hreflang="{{ $localeCode }}" href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
+                                            {{ $properties['native'] }}
+                                        </a>
+                                    </li>
+                                @endforeach
+
+<!-- {{--                                <li>--}}
+{{--                                    <a href="javascript:void(0);">--}}
+{{--                                        <span class="flag-icon flag-icon-eg"></span>Ar</a>--}}
+{{--                                </li>--}}
+
+
+{{--                                <li>--}}
+{{--                                    <a href="javascript:void(0);">--}}
+{{--                                        <span class="flag-icon flag-icon-eg"></span>En</a>--}}
+{{--                                </li>--}} -->
+                            </ul>
+                        </li>
+                    </ul>
+
+
+
 
             <!-- .header-menu-icons -->
           </div>
