@@ -16,7 +16,7 @@ class UserController extends Controller
 
 public function index(Request $request)
 {
-$data = User::where('roles_name','["admin"]')->orderBy('id','DESC')->get()->except(auth()->user()->id);
+$data = User::where('roles_name','["Owner"]')->orderBy('id','DESC')->get()->except(auth()->user()->id);
 return view('users.index',compact('data'))
 ->with('i', ($request->input('page', 1) - 1) * 5);
 }

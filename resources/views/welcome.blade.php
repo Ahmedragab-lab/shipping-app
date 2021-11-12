@@ -236,7 +236,7 @@
             <!-- .works-latest-item -->
           </div>
         </div>
-        <div class="column is-6-desktop is-12-tablet" data-aos="fade">
+        <div class="column is-6-desktop is-12-tablet" >
           <br>
           <h1 class="heading-title style-3 has-text-left"> local pickup with logistics
             <br> services of any

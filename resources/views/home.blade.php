@@ -31,8 +31,8 @@
                             </span>
                         </div>
                         <div class="float-right text-right">
-                            <p class="card-text text-dark">Categories</p>
-                            <h4>44</h4>
+                            <p class="card-text text-dark">Services</p>
+                            <h4>{{ $serv }}</h4>
                         </div>
                     </div>
                     <p class="text-muted pt-3 mb-0 mt-2 border-top">
@@ -51,8 +51,28 @@
                         </span>
                         </div>
                         <div class="float-right text-right">
-                            <p class="card-text text-dark">Orders</p>
-                            <h4>656</h4>
+                            <p class="card-text text-dark">Products</p>
+                            <h4>{{ $product }}</h4>
+                        </div>
+                    </div>
+                    <p class="text-muted pt-3 mb-0 mt-2 border-top">
+                        <i class="fa fa-bookmark-o mr-1" aria-hidden="true"></i> Total sales
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-lg-6 col-md-6 mb-30">
+            <div class="card card-statistics h-100">
+                <div class="card-body">
+                    <div class="clearfix">
+                        <div class="float-left">
+                        <span class="text-warning">
+                            <i class="fa fa-shopping-cart highlight-icon" aria-hidden="true"></i>
+                        </span>
+                        </div>
+                        <div class="float-right text-right">
+                            <p class="card-text text-dark">Categories</p>
+                            <h4>{{ $cat }}</h4>
                         </div>
                     </div>
                     <p class="text-muted pt-3 mb-0 mt-2 border-top">
@@ -71,8 +91,8 @@
                             </span>
                         </div>
                         <div class="float-right text-right">
-                            <p class="card-text text-dark">Revenue</p>
-                            <h4>$65656</h4>
+                            <p class="card-text text-dark">Clients</p>
+                            <h4>{{ $client }}</h4>
                         </div>
                     </div>
                     <p class="text-muted pt-3 mb-0 mt-2 border-top">
