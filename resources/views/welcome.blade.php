@@ -216,15 +216,19 @@
       <br>
       <br>
       <div class="columns is-variable is-8 is-multiline">
-        <div class="column is-6-desktop is-12-tablet has-text-centered" data-aos="fade-up">
+        <div class="column is-6-desktop is-12-tablet has-text-centered" >
           <div class="works-latest">
             <div class="works-latest-item">
-              <img alt="Joo - Niche Multi-Purpose HTML Template" src="./assets/images/global/introduction.png">
+              {{-- <img alt="Joo - Niche Multi-Purpose HTML Template" src="{{ asset('front/images/global/introduction.png') }}"> --}}
               <div class="works-latest-item-icon style-2">
-                <a href="https://www.youtube.com/watch?v=jc4y2Xqerj0" class="mfp-lightbox mfp-iframe">
-                  <span class="icon ripple-effect">
+                {{-- <a href="https://www.youtube.com/watch?v=jc4y2Xqerj0" class="mfp-lightbox mfp-iframe"> --}}
+                <iframe class="mfp-lightbox mfp-iframe " width="700" height="315" src="https://www.youtube.com/embed/jHGzIrM4UbA"
+                 frameborder="0" allow="autoplay; encrypted-media;" allowfullscreen></iframe>
+                 {{-- <iframe width="1280" height="720" src="https://www.youtube.com/embed/jHGzIrM4UbA" title="YouTube video player"
+                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> --}}
+                  {{-- <span class="icon ripple-effect">
                     <i class="ion-ios-play"></i>
-                  </span>
+                  </span> --}}
                 </a>
               </div>
               <!-- .works-latest-icon -->
@@ -249,7 +253,7 @@
               </h4>
             </div>
             <div class="level-right">
-              <img alt="Joo - Niche Multi-Purpose HTML Template" src="./assets/images/global/mark.png"> </div>
+              <img alt="Joo - Niche Multi-Purpose HTML Template" src="{{ asset('front/images/global/mark.png') }}"> </div>
           </div>
         </div>
       </div>
