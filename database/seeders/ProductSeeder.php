@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Cat;
 use App\Models\Product;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
@@ -17,7 +18,7 @@ class ProductSeeder extends Seeder
     {
         DB::table('products')->delete();
         $prod = new Product();
-        $prod->cat_id = 1;
+        $prod->cat_id = Cat::all()->random()->id;
         $prod->product_name = 'Oppo Reno';
         $prod->slug = 'mobile';
         $prod->small_desc = 'this is famous product around world  ';
