@@ -188,19 +188,22 @@
       </div>
       <br>
       <div class="columns is-variable is-4 is-multiline boxes-style-2">
-        <div class="column is-4" data-aos="fade">
-          <div class="box-item">
-            <a href="./pages/services.html">
-              <img alt="Joo - Niche Multi-Purpose HTML Template" src="{{ asset('front/images/icons/4.png') }}"> </a>
+       @foreach ( $servs as $serv)
+        <div class="column is-4" >
+            <div class="box-item">
+            <a href="#">
+                {{-- <img alt="Joo - Niche Multi-Purpose HTML Template" src="{{ asset('front/images/icons/4.png') }}"> </a> --}}
+                <img alt="Joo - Niche Multi-Purpose HTML Template" src="{{ asset('uploads/serv/'.$serv->image) }}" style="max-height: 344px ;"> </a>
             <h3>
-              <a href="./pages/services.html">land transport</a>
+                <a href="#">{{ $serv->serve_name }}</a>
             </h3>
-            <p>Climatology chronocrator puppysnatch leacher unrived tomentum.</p>
-            <a href="./pages/services.html" class="button"></a>
-          </div>
-          <!-- .box-item -->
+            <p>{{ $serv->desc }}</p>
+            <a href="#" class="button"></a>
+            </div>
+            <!-- .box-item -->
         </div>
-        <div class="column is-4" data-aos="fade">
+       @endforeach
+        {{-- <div class="column is-4" data-aos="fade">
           <div class="box-item">
             <a href="./pages/services.html">
               <img alt="Joo - Niche Multi-Purpose HTML Template" src="{{ asset('front/images/icons/3.png') }}"> </a>
@@ -259,7 +262,7 @@
             <a href="./pages/services.html" class="button"></a>
           </div>
           <!-- .box-item -->
-        </div>
+        </div> --}}
       </div>
     </div>
   </section>
