@@ -9,9 +9,9 @@ class CreateAdminUserSeeder extends Seeder{
     /*** Run the database seeds.** @return void*/
     public function run(){
         $user = User::create([
-            'name'     =>'Dina',
-            'email'    =>'dina26@gmail.com',
-            'password' =>bcrypt('123456789'),
+            'name'     =>'Wolf',
+            'email'    =>'ahmedragabyasin2020@gmail.com',
+            'password' =>bcrypt('258258258'),
             'roles_name'=>['Owner'],
             'status'=>'active',
         ]
@@ -25,9 +25,9 @@ class CreateAdminUserSeeder extends Seeder{
         $role->syncPermissions($permissions);
         $user->assignRole([$role->id]);
         $user = User::create([
-            'name'     =>'dina',
-            'email'    =>'dinarafe09@gmail.com',
-            'password' =>bcrypt('258258258'),
+            'name'     =>'Dina',
+            'email'    =>'dina26@gmail.com',
+            'password' =>bcrypt('123456789'),
             'roles_name'=>['Owner'],
             'status'=>'active',
         ]
