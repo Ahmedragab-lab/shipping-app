@@ -7,6 +7,9 @@
 .pageloader::after {
     animation: loader-figure .15s infinite cubic-bezier(.215,.61,.355,1);
 }
+.logo-text{
+    color: #cf5029;
+}
 /* end loader */
 /* frame video */
 .mfp-lightbox{

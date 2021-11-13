@@ -5144,13 +5144,13 @@ body {
 }
 
 a {
-    color: #0063dd;
+    color: #cf5029 ;
     cursor: pointer;
     text-decoration: none;
 }
 
 a strong {
-    color: currentColor;
+    color: #cf5029 !important;
 }
 
 a:hover {
@@ -5748,27 +5748,27 @@ a.has-text-dark:hover, a.has-text-dark:focus {
 }
 
 .has-text-primary {
-    color: #0063dd !important;
+    color: #cf5029 !important;
 }
 
 a.has-text-primary:hover, a.has-text-primary:focus {
-    color: #004caa !important;
+    color: #cf5029 !important;
 }
 
 .has-background-primary {
-    background-color: #0063dd !important;
+    background-color: #cf5029 !important;
 }
 
 .has-text-link {
-    color: #0063dd !important;
+    color: #cf5029 !important;
 }
 
 a.has-text-link:hover, a.has-text-link:focus {
-    color: #004caa !important;
+    color: #cf5029 !important;
 }
 
 .has-background-link {
-    background-color: #0063dd !important;
+    background-color: #cf5029 !important;
 }
 
 .has-text-info {
@@ -5820,63 +5820,63 @@ a.has-text-danger:hover, a.has-text-danger:focus {
 }
 
 .has-text-primary-2 {
-    color: #056ae8 !important;
+    color: #cf5029 !important;
 }
 
 a.has-text-primary-2:hover, a.has-text-primary-2:focus {
-    color: #0453b6 !important;
+    color: #cf5029 !important;
 }
 
 .has-background-primary-2 {
-    background-color: #056ae8 !important;
+    background-color: #cf5029 !important;
 }
 
 .has-text-primary-3 {
-    color: #025fd2 !important;
+    color: #cf5029 !important;
 }
 
 a.has-text-primary-3:hover, a.has-text-primary-3:focus {
-    color: #02489f !important;
+    color: #cf5029 !important;
 }
 
 .has-background-primary-3 {
-    background-color: #025fd2 !important;
+    background-color:#cf5029 !important;
 }
 
 .has-text-primary-4 {
-    color: #0968dd !important;
+    color: #cf5029 !important;
 }
 
 a.has-text-primary-4:hover, a.has-text-primary-4:focus {
-    color: #0751ac !important;
+    color: #cf5029 !important;
 }
 
 .has-background-primary-4 {
-    background-color: #0968dd !important;
+    background-color: #cf5029 !important;
 }
 
 .has-text-primary-5 {
-    color: #0864d6 !important;
+    color: #cf5029 !important;
 }
 
 a.has-text-primary-5:hover, a.has-text-primary-5:focus {
-    color: #064da5 !important;
+    color: #cf5029 !important;
 }
 
 .has-background-primary-5 {
-    background-color: #0864d6 !important;
+    background-color: #cf5029 !important;
 }
 
 .has-text-primary-6 {
-    color: #096ae2 !important;
+    color: #cf5029 !important;
 }
 
 a.has-text-primary-6:hover, a.has-text-primary-6:focus {
-    color: #0753b1 !important;
+    color: #cf5029 !important;
 }
 
 .has-background-primary-6 {
-    background-color: #096ae2 !important;
+    background-color: #cf5029 !important;
 }
 
 .has-text-primary-7 {

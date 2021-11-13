@@ -9,8 +9,8 @@ class CreateAdminUserSeeder extends Seeder{
     /*** Run the database seeds.** @return void*/
     public function run(){
         $user = User::create([
-            'name'     =>'Dina',
-            'email'    =>'dina26@gmail.com',
+            'name'     =>'Asmaa',
+            'email'    =>'asmaahosnyaly@gmail.com',
             'password' =>bcrypt('123456789'),
             'roles_name'=>['Owner'],
             'status'=>'active',
