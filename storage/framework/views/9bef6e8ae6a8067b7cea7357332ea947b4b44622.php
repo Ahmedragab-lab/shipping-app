@@ -2,17 +2,36 @@
 <?php $__env->startSection('css'); ?>
     <?php echo toastr_css(); ?>
 <?php $__env->startSection('title'); ?>
-   تتبع الشحنة
+tracking_steps
 <?php $__env->stopSection(); ?>
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('page-header'); ?>
     <!-- breadcrumb -->
 <?php $__env->startSection('PageTitle'); ?>
-تتبع الشحنة
+tracking_steps
 <?php $__env->stopSection(); ?>
 <!-- breadcrumb -->
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('content'); ?>
+<div class="page-title">
+        <div class="row">
+            <div class="col-sm-6">
+                <h4 class="mb-0"> <?php echo e(__('tracking_steps page')); ?></h4>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb pt-0 pr-0 float-left float-sm-right">
+                    <li class="breadcrumb-item"><a href="#" class="default-color">tracking_steps</a></li>
+                    <li class="breadcrumb-item active"><?php echo e(__('table')); ?></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <!-- widgets -->
+    <div class="row">
+        <div class="col-xl-3 col-lg-6 col-md-6 mb-30">
+            <a href="<?php echo e(route('tracking_steps.create')); ?>" class="btn btn-primary">Add tracking_step</a>
+        </div>
+    </div>
     <!-- row -->
     <div class="row">
         <div class="col-md-12 mb-30">
@@ -27,14 +46,12 @@
                                            style="text-align: center">
                                         <thead>
                                         <tr class="alert-success">
-                                            <th>#</th>
+                                            <th> #</th>
                                             <th> id</th>
-                                            <th>order-no </th>
-                                            <th> step1</th>
-                                            <th> step2</th>
-                                            <th>step3</th>
-                                            <th>step4</th>
-                                            <th> date</th>
+                                            <th>order_no </th>
+                                            <th> steps</th>
+                                             <th> date</th>
+                                        
                                         
                                         </tr>
                                         </thead>
@@ -43,18 +60,16 @@
                                             <tr>
                                             <td><?php echo e($loop->iteration); ?></td>
                                             <td><?php echo e($tracking_step->id); ?></td>
-                                            <td><?php echo e($tracking_step->order-no); ?></td>
-                                            <td><?php echo e($tracking_step->step1); ?></td>
-                                            <td><?php echo e($tracking_step->step2); ?></td>
-                                            <td><?php echo e($tracking_step->step3); ?></td>
-                                            <td><?php echo e($tracking_step->step4); ?></td>
+                                            <td><?php echo e($tracking_step->order_no); ?></td>
+                                            <td><?php echo e($tracking_step->steps); ?></td>
+                                            
                                             <td><?php echo e($tracking_step->date); ?></td>
                                                 <td>
                                                     <a href="<?php echo e(route('tracking_steps.edit',$tracking_step->id)); ?>" class="btn btn-info btn-sm" role="button" aria-pressed="true"><i class="fa fa-edit"></i></a>
                                                     <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#Delete_receipt<?php echo e($tracking_step->id); ?>" ><i class="fa fa-trash"></i></button>
                                                 </td>
                                             </tr>
-                                        <?php echo $__env->make('admin.tracking_steps.Delete', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+                                            <?php echo $__env->make('admin.tracking_steps.Delete', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
                                         <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                                     </table>
                                 </div>
