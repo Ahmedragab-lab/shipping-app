@@ -62,7 +62,7 @@
                                                 </button>
                                             </td>
                                         </tr>
-                                    @include('admin.services.delete')
+                                    @include('admin.feedback.delete')
                                     @endforeach
                                 </table>
                             </div>
