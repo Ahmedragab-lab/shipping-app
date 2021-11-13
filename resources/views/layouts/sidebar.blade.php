@@ -25,7 +25,7 @@
           </li>
           <li>
             <a href="{{ route('client.index') }}">
-              <div class="pull-left"><i class="fa fa-users"></i><span class="right-nav-text">{{ __('clients') }}</span></div>
+              <div class="pull-left"><i class="fa fa-users"></i><span class="right-nav-text">{{ __('site.clients') }}</span></div>
               <div class="clearfix"></div>
             </a>
           </li>
@@ -37,31 +37,31 @@
           </li>
           <li>
             <a href="javascript:void(0);" data-toggle="collapse" data-target="#elements1">
-              <div class="pull-left"><i class="fa fa-id-card-o"></i><span class="right-nav-text">{{ __('component') }}</span></div>
+              <div class="pull-left"><i class="fa fa-id-card-o"></i><span class="right-nav-text">{{ __('site.component') }}</span></div>
               <div class="pull-right"><i class="ti-plus"></i></div><div class="clearfix"></div>
             </a>
             <ul id="elements1" class="collapse" data-parent="#sidebarnav">
-              <li><a href="{{ route('cats.index') }}">categories</a></li>
-              <li><a href="{{ route('products.index') }}">Products</a></li>
+              <li><a href="{{ route('cats.index') }}">{{ __('site.categories') }}</a></li>
+              <li><a href="{{ route('products.index') }}">{{ __('site.Products') }}</a></li>
 
             </ul>
           </li>
           <li>
             <a href="{{ route('serv.index') }}">
-              <div class="pull-left"><i class="fa fa-times-rectangle"></i><span class="right-nav-text">{{ __('site.serv') }}</span></div>
+              <div class="pull-left"><i class="fa fa-handshake-o"></i><span class="right-nav-text">{{ __('site.serv') }}</span></div>
               <div class="clearfix"></div>
             </a>
           </li>
 
           <li>
             <a href="{{ route('tracking_steps.index') }}">
-              <div class="pull-left"><i class="fa fa-times-rectangle"></i><span class="right-nav-text">{{ __('site.tracking-steps') }}</span></div>
+              <div class="pull-left"><i class="fa fa-low-vision"></i><span class="right-nav-text">{{ __('site.tracking-steps') }}</span></div>
               <div class="clearfix"></div>
             </a>
           </li>
           <li>
             <a href="{{ route('feedback.index') }}">
-              <div class="pull-left"><i class="fa fa-times-rectangle"></i><span class="right-nav-text">{{ __('site.feedback') }}</span></div>
+              <div class="pull-left"><i class="fa fa-signing"></i><span class="right-nav-text">{{ __('site.feedback') }}</span></div>
               <div class="clearfix"></div>
             </a>
           </li>
