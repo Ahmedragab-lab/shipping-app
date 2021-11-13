@@ -55,7 +55,7 @@ class ServiceController extends Controller
                 $file->move('uploads/serv/', $filename);
                 $serv->image = $filename;
             }
-            $serv->serve_name = $request->serve_name;
+            $serv->serve_name = ['en'=>$request->serve_name_en ,'ar'=>$request->serve_name];
             $serv->desc = $request->desc;
             $serv->status = $request->status==true?'1':'0';
             $serv->save();
@@ -112,7 +112,7 @@ class ServiceController extends Controller
                 $file->move('uploads/serv',$filename);
                 $serv->image = $filename;
             }
-            $serv->serve_name = $request->serve_name;
+            $serv->serve_name = ['en'=>$request->serve_name_en ,'ar'=>$request->serve_name];
             $serv->desc = $request->desc;
             $serv->status = $request->status==true?'1':'0';
             $serv->update();
@@ -124,7 +124,7 @@ class ServiceController extends Controller
         }
     }
 
-    
+
     public function destroy($id)
     {
         try{

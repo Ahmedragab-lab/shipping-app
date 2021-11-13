@@ -91,6 +91,7 @@ class ComposerStaticInite3ae3d6d04dd22c41dd66211e323bbd9
             'Symfony\\Component\\ErrorHandler\\' => 31,
             'Symfony\\Component\\CssSelector\\' => 30,
             'Symfony\\Component\\Console\\' => 26,
+            'Spatie\\Translatable\\' => 20,
             'Spatie\\Permission\\' => 18,
         ),
         'R' => 
@@ -321,6 +322,10 @@ class ComposerStaticInite3ae3d6d04dd22c41dd66211e323bbd9
         array (
             0 => __DIR__ . '/..' . '/symfony/console',
         ),
+        'Spatie\\Translatable\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/spatie/laravel-translatable/src',
+        ),
         'Spatie\\Permission\\' => 
         array (
             0 => __DIR__ . '/..' . '/spatie/laravel-permission/src',
@@ -544,6 +549,7 @@ class ComposerStaticInite3ae3d6d04dd22c41dd66211e323bbd9
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Admin\\CatController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/CatController.php',
         'App\\Http\\Controllers\\Admin\\ClientController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/ClientController.php',
+        'App\\Http\\Controllers\\Admin\\ClientFeedbackController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/ClientFeedbackController.php',
         'App\\Http\\Controllers\\Admin\\ProductController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/ProductController.php',
         'App\\Http\\Controllers\\Admin\\ServiceController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/ServiceController.php',
         'App\\Http\\Controllers\\Admin\\TrackingstepsController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/TrackingstepsController.php',
@@ -696,9 +702,14 @@ class ComposerStaticInite3ae3d6d04dd22c41dd66211e323bbd9
         'Cron\\MinutesField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/MinutesField.php',
         'Cron\\MonthField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/MonthField.php',
         'Database\\Factories\\UserFactory' => __DIR__ . '/../..' . '/database/factories/UserFactory.php',
+        'Database\\Seeders\\ClientSeeder' => __DIR__ . '/../..' . '/database/seeders/ClientSeeder.php',
         'Database\\Seeders\\CreateAdminUserSeeder' => __DIR__ . '/../..' . '/database/seeders/CreateAdminUserSeeder.php',
         'Database\\Seeders\\DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeders/DatabaseSeeder.php',
+        'Database\\Seeders\\FeedbackSeeder' => __DIR__ . '/../..' . '/database/seeders/FeedbackSeeder.php',
         'Database\\Seeders\\PermissionTableSeeder' => __DIR__ . '/../..' . '/database/seeders/PermissionTableSeeder.php',
+        'Database\\Seeders\\ProductSeeder' => __DIR__ . '/../..' . '/database/seeders/ProductSeeder.php',
+        'Database\\Seeders\\SectionSeeder' => __DIR__ . '/../..' . '/database/seeders/SectionSeeder.php',
+        'Database\\Seeders\\ServiceSeeder' => __DIR__ . '/../..' . '/database/seeders/ServiceSeeder.php',
         'Database\\Seeders\\adminseeder' => __DIR__ . '/../..' . '/database/seeders/adminseeder.php',
         'DeepCopy\\DeepCopy' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/DeepCopy.php',
         'DeepCopy\\Exception\\CloneException' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/Exception/CloneException.php',
@@ -4623,6 +4634,10 @@ class ComposerStaticInite3ae3d6d04dd22c41dd66211e323bbd9
         'Spatie\\Permission\\Traits\\HasRoles' => __DIR__ . '/..' . '/spatie/laravel-permission/src/Traits/HasRoles.php',
         'Spatie\\Permission\\Traits\\RefreshesPermissionCache' => __DIR__ . '/..' . '/spatie/laravel-permission/src/Traits/RefreshesPermissionCache.php',
         'Spatie\\Permission\\WildcardPermission' => __DIR__ . '/..' . '/spatie/laravel-permission/src/WildcardPermission.php',
+        'Spatie\\Translatable\\Events\\TranslationHasBeenSet' => __DIR__ . '/..' . '/spatie/laravel-translatable/src/Events/TranslationHasBeenSet.php',
+        'Spatie\\Translatable\\Exceptions\\AttributeIsNotTranslatable' => __DIR__ . '/..' . '/spatie/laravel-translatable/src/Exceptions/AttributeIsNotTranslatable.php',
+        'Spatie\\Translatable\\HasTranslations' => __DIR__ . '/..' . '/spatie/laravel-translatable/src/HasTranslations.php',
+        'Spatie\\Translatable\\TranslatableServiceProvider' => __DIR__ . '/..' . '/spatie/laravel-translatable/src/TranslatableServiceProvider.php',
         'Stringable' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Stringable.php',
         'Symfony\\Component\\Console\\Application' => __DIR__ . '/..' . '/symfony/console/Application.php',
         'Symfony\\Component\\Console\\Attribute\\AsCommand' => __DIR__ . '/..' . '/symfony/console/Attribute/AsCommand.php',

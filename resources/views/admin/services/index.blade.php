@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('css')
   @section('title')
-  services
+  {{ __('site.services') }}
   @stop
 @endsection
 {{-- start content  --}}
@@ -9,12 +9,12 @@
     <div class="page-title">
         <div class="row">
             <div class="col-sm-6">
-                <h4 class="mb-0"> {{ __('services page') }}</h4>
+                <h4 class="mb-0"> {{ __('site.services_page') }}</h4>
             </div>
             <div class="col-sm-6">
                 <ol class="breadcrumb pt-0 pr-0 float-left float-sm-right">
-                    <li class="breadcrumb-item"><a href="#" class="default-color">services</a></li>
-                    <li class="breadcrumb-item active">{{ __('table') }}</li>
+                    <li class="breadcrumb-item"><a href="#" class="default-color">{{ __('site.services') }}</a></li>
+                    <li class="breadcrumb-item active">{{ __('site.page') }}</li>
                 </ol>
             </div>
         </div>
@@ -22,7 +22,7 @@
     <!-- widgets -->
     <div class="row">
         <div class="col-xl-3 col-lg-6 col-md-6 mb-30">
-            <a href="{{ route('serv.create') }}" class="btn btn-primary">Add Service</a>
+            <a href="{{ route('serv.create') }}" class="btn btn-primary">{{ __('site.Add_Service') }}</a>
         </div>
     </div>
  <!-- row -->
@@ -40,11 +40,11 @@
                                     <thead>
                                     <tr class="alert-success">
                                         <th>#</th>
-                                        <th>Service name</th>
-                                        <th>description</th>
-                                        <th>status</th>
-                                        <th>image</th>
-                                        <th>action</th>
+                                        <th>{{ __('site.Service_name') }}</th>
+                                        <th>{{ __('site.description') }}</th>
+                                        <th>{{ __('site.status') }}</th>
+                                        <th>{{ __('site.image') }}</th>
+                                        <th>{{ __('site.action') }}</th>
                                     </tr>
                                     </thead>
                                     <tbody>
@@ -53,7 +53,7 @@
                                             <td>{{ $index+1 }}</td>
                                             <td>{{ $serv->serve_name }}</td>
                                             <td>{{ $serv->desc }}</td>
-                                            <td>{{ $serv->status ==1?'Avilable':'Unavilable' }}</td>
+                                            <td>{{ $serv->status ==1 ?  __('site.Avilable'): __('site.Unavilable') }}</td>
                                             <td>
                                                 <img src="{{ asset('uploads/serv/'.$serv->image) }}" alt="" width="100px" height="100px" class="img-thumbnail">
                                             </td>

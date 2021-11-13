@@ -30,8 +30,12 @@
             @method('PUT')
             <div class="row">
                 <div class="col-md-6 mb-3">
-                    <label for="">service name</label>
-                    <input type="text" placeholder="Enter service name" name="serve_name" class="form-control" value="{{ $serv->serve_name }}">
+                    <label for="">{{ __('site.service_name_ar') }}</label>
+                    <input type="text" placeholder="ادخل اسم الخدمه" name="serve_name" class="form-control" value="{{ $serv->getTranslation('serve_name','ar') }}">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="">{{ __('site.service_name_en') }}</label>
+                    <input type="text" placeholder="Enter service name " name="serve_name_en" class="form-control" value="{{ $serv->getTranslation('serve_name','en') }}">
                 </div>
                 <div class="col-md-6 mb-3">
                    <label for="status">status</label>

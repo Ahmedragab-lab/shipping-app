@@ -100,6 +100,13 @@
       0 => 'Spatie\\Permission\\PermissionServiceProvider',
     ),
   ),
+  'spatie/laravel-translatable' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Spatie\\Translatable\\TranslatableServiceProvider',
+    ),
+  ),
   'yoeunes/toastr' => 
   array (
     'providers' => 

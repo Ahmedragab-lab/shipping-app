@@ -29,8 +29,12 @@
             @csrf
              <div class="row">
                  <div class="col-md-6 mb-3">
-                     <label for="">service name</label>
-                     <input type="text" placeholder="Enter service name" name="serve_name" class="form-control">
+                     <label for="">{{ __('site.service_name_ar') }}</label>
+                     <input type="text" placeholder="ادخل اسم الخدمه" name="serve_name" class="form-control">
+                 </div>
+                 <div class="col-md-6 mb-3">
+                     <label for="">{{ __('site.service_name_en') }}</label>
+                     <input type="text" placeholder="Enter service name " name="serve_name_en" class="form-control">
                  </div>
                  <div class="col-md-6 mb-3">
                     <label for="status">status</label>
