@@ -3,6 +3,11 @@
 return [
    'wolf'=>'Eng Ahmed Ragab for software management',
    'page'=>'Page',
+   'Save'=>'Save',
+   'Close'=>'Close',
+   'create'=>'Create',
+   'edit'=>'Edit',
+   'delete'=>'Delete',
    //    sidebar
    'dashboard'=>'Dashboard',
    'admins'=>'Admins',
@@ -28,6 +33,13 @@ return [
 'action'=>'Action',
 'Avilable'=>'Avilable',
 'Unavilable'=>'Unavilable',
+'add-image'=>'Add Image',
+'edit-image'=>'edit Image',
+'Edit_services'=>'Edit Services',
+'delete services'=>'Delete Services',
+'delete_services'=>'Delete Services',
+'sms_delete_services'=>'Are you sure to delete this services !',
+
 // end dashboard service page translation
 
 ];

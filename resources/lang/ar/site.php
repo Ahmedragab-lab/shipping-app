@@ -3,6 +3,11 @@
 return [
    'wolf'=>'البشمهندس احمد رجب لاداره البرمجيات',
    'page'=>'صفحه',
+   'Save'=>'حفظ',
+   'Close'=>'اغلق',
+   'create'=>'اضف',
+   'edit'=>'تعديل',
+   'delete'=>'حذف',
    //    sidebar
    'dashboard'=>'الرئيسيه',
    'admins'=>'الادمن',
@@ -27,6 +32,11 @@ return [
 'action'=>'خصائص',
 'Avilable'=>'متاح',
 'Unavilable'=>'غير متاح',
+'add-image'=>'اضف صوره',
+'edit-image'=>'تعديل صوره',
+'Edit_services'=>'تعديل الخدمه',
+'delete_services'=>'حذف الخدمه',
+'sms_delete_services'=>'هل انت متاكد من حذف الخدمه !!',
 // end dashboard service page translatio
 
 ];

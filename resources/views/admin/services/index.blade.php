@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('css')
   @section('title')
-  {{ __('site.services') }}
+  {{ __('site.services_page') }}
   @stop
 @endsection
 {{-- start content  --}}
