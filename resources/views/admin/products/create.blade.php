@@ -29,8 +29,8 @@
             @csrf
              <div class="row">
                 <div class="col-md-12 mb-3">
-                    <select class="form-control" name="cat_id">
-                        <option value="" > Select a Category</option>
+                    <select class="form-control" name="cat_id" style="padding:10px;">
+                        <option value="" > ---- Select a Category ----</option>
                         @foreach ( $cats as $cat)
                              <option value="{{ $cat->id }}">{{ $cat->cat_name }}</option>
                         @endforeach
