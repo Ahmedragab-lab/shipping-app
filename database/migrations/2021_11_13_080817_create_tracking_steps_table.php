@@ -15,12 +15,13 @@ class CreateTrackingStepsTable extends Migration
     {
         Schema::create('tracking_steps', function (Blueprint $table) {
             $table->id();
-            $table->string('order-no');
+            $table->string('order_no');
             $table->tinyInteger('step1')->default('0');
             $table->tinyInteger ('step2')->default('0');
             $table->tinyInteger ('step3')->default('0');
             $table->tinyInteger ('step4')->default('0');
-            $table->datetime ('date');
+            $table->date('date');
+            $table->timestamps();
         });
     }
 

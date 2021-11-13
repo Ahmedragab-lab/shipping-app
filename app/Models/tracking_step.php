@@ -7,7 +7,14 @@ use Illuminate\Database\Eloquent\Model;
 
 class tracking_step extends Model
 {
-    use HasFactory;
-    protected $table = 'tracking_steps';
-    protected $guarded = [];
+    protected $fillable = [
+        'id',
+        'order_no',
+        'step1',
+        'step2',
+        'step3',
+        'step4',
+        'date',
+        
+    ];
 }
