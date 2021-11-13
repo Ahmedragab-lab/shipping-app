@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Models\Service;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\storeservices;
 use App\Repo\ServInterface;
 use Illuminate\Support\Facades\File;
 
@@ -44,9 +45,10 @@ class ServiceController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(storeservices $request)
     {
         try {
+            $validated = $request->validated();
             $serv = new Service();
             if($request->hasfile('image')){
                 $file = $request->file('image');
@@ -97,9 +99,10 @@ class ServiceController extends Controller
      * @param  \App\Models\Service  $service
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(storeservices $request, $id)
     {
         try{
+            $validated = $request->validated();
             $serv = Service::find($id);
             if($request->hasFile('image')){
                 $path = 'uploads/serv/' . $serv->image;

@@ -37,6 +37,10 @@ return [
 'Edit_services'=>'تعديل الخدمه',
 'delete_services'=>'حذف الخدمه',
 'sms_delete_services'=>'هل انت متاكد من حذف الخدمه !!',
+
+'required_ar'=>'يرجي ادخال اسم الخدمه باللغة العربية',
+'required_en'=>'يرجي ادخال اسم الخدمه باللغة الانجليزية',
+'desc_required'=>'يرجى كتابه وصف الخدمه',
 // end dashboard service page translatio
 
 ];

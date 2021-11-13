@@ -40,6 +40,9 @@ return [
 'delete_services'=>'Delete Services',
 'sms_delete_services'=>'Are you sure to delete this services !',
 
+'required_ar'=>'please write arabic language',
+'required_en'=>'please write english language',
+'desc_required'=>'please enter services description',
 // end dashboard service page translation
 
 ];
