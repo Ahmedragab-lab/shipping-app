@@ -17,15 +17,14 @@ Route::group(
         //==========================================================================================
         Auth::routes();
         //as a client ==============================================================================
-        // Route::get('/front',[FrontendController::class,'index'])->name('front');
         Route::resource('front',Frontend\FrontendController::class);
         Route::resource('allproducts',Frontend\AllProducts::class);
                                  //============================
-    Route::middleware(['auth'])->group(function () {
-      Route::get('addtocart',[Frontend\CartController::class,'addtocart'])->name('addtocart');
-      Route::view('order', 'order-service')->name('order');
-      Route::view('contactus', 'contactus')->name('contactus');
-     });
+        Route::middleware(['auth'])->group(function () {
+        Route::get('addtocart',[Frontend\CartController::class,'addtocart'])->name('addtocart');
+        Route::view('order', 'order-service')->name('order');
+        Route::view('contactus', 'contactus')->name('contactus');
+        });
 
         //as admin ==================================================================================
         Route::group(['middleware' => ['auth','Admin']], function() {
